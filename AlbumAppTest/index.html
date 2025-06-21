@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity Web Player | Asseter</title>
+    <title>Unity Web Player | AdrSample</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=540 height=960 tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -20,7 +20,7 @@
       <div id="unity-footer">
         <div id="unity-logo-title-footer"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">Asseter</div>
+        <div id="unity-build-title">AdrSample</div>
       </div>
     </div>
     <script>
@@ -52,16 +52,16 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/nattu1g.github.io.loader.js";
+      var loaderUrl = buildUrl + "/AlbumAppTest.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/nattu1g.github.io.data",
-        frameworkUrl: buildUrl + "/nattu1g.github.io.framework.js",
-        codeUrl: buildUrl + "/nattu1g.github.io.wasm",
+        dataUrl: buildUrl + "/AlbumAppTest.data",
+        frameworkUrl: buildUrl + "/AlbumAppTest.framework.js",
+        codeUrl: buildUrl + "/AlbumAppTest.wasm",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "Asset",
-        productName: "Asseter",
-        productVersion: "0.1.0",
+        companyName: "DefaultCompany",
+        productName: "AdrSample",
+        productVersion: "1.0",
         showBanner: unityShowBanner,
       };
 
@@ -98,8 +98,8 @@
 
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
-        canvas.style.width = "540px";
-        canvas.style.height = "960px";
+        canvas.style.width = "960px";
+        canvas.style.height = "600px";
       }
 
       document.querySelector("#unity-loading-bar").style.display = "block";
